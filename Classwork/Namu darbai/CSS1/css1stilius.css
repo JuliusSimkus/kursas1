@@ -1,14 +1,14 @@
 h1, h2{
-    color: purple;
+        color: purple;
 }
 
 #para2{
-            color: grey;
-        }
+        color: grey;
+}
 [class^="pirmas"]{
-            font-family: "Times New Roman", Times, serif;
-        }
-    span {
+                font-family: "Times New Roman", Times, serif;
+}
+span {
     font-size:normal;
     font-style: italic;
-    }
+}
