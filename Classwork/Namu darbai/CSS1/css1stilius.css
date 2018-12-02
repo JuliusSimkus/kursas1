@@ -6,9 +6,9 @@ h1, h2{
         color: grey;
 }
 [class^="pirmas"]{
-                font-family: "Times New Roman", Times, serif;
+        font-family: "Times New Roman", Times, serif;
 }
 span {
-    font-size:normal;
-    font-style: italic;
+        font-size:normal;
+        font-style: italic;
 }
