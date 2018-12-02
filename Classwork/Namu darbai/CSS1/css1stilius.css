@@ -5,3 +5,10 @@ h1, h2{
 #para2{
             color: grey;
         }
+[class^="pirmas"]{
+            font-family: "Times New Roman", Times, serif;
+        }
+    span {
+    font-size:normal;
+    font-style: italic;
+    }
