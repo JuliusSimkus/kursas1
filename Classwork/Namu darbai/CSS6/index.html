@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS6</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <style>
+       .qheads{
+          font-size:15px;
+          color: black;
+          text-decoration: none;
+       }
+       .klausimai{
+          margin-bottom: 50px;
+       }
+
+    </style>
+    
+</head>
+
+<body>
+    <form method="post" action="imone.php">
+        
+        <fieldset>
+            <legend>Jūsų informacija</legend>
+            <table>
+               <tr>
+                  <div class="row">
+                   <div class="input-field col s3">
+                     <input value="" id="first_name2" type="text" class="validate">
+                     <label class="active" for="first_name2">Vardas</label>
+                   </div>
+                 </div>
+               </tr>
+                <tr>
+                    <div class="row">
+                     <div class="input-field col s3">
+                     <input value="" id="first_name2" type="text" class="validate">
+                     <label class="active" for="first_name2">Pavardė</label>
+                   </div>
+                 </div>
+                </tr>
+            </table>
+        </fieldset>
+       
+    </form> 
+    
+    <form method="post" action="imone.php">
+        
+        <fieldset class="klausimai">
+            <legend>Klausimai</legend>
+<!--kodėl neveikia select multiple?-->
+           <label class="qheads">Kaip sužinojote apie mus? </label>
+           <select class="browser-default">
+                <option value="1">Google</option>
+                <option value="2">Draugai</option>
+                <option value="3">Kaimynai</option>
+           </select>
+            
+            
+            <br>
+            <br>
+            <label class="qheads">Ar apsilankysite vėl?</label>
+            <br>
+            
+            <form action="#">
+                <p>
+                  <label>
+                    <input name="group1" type="radio" checked />
+                    <span>Taip</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Ne</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input class="with-gap" name="group1" type="radio"  />
+                    <span>Galbūt</span>
+                  </label>
+                </p>
+            </form>
+           <br>
+            <label class="qheads">Ką manote apie kursą?</label>
+            <br>
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Rašykite viską ką galvojate</label>
+                    </div>
+                  </div>
+                </form>
+            </div>
+
+            Pažymėkite programavimo kalbas su kuriomis esate susipažinę:
+            <br>
+                 <form action="#">
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>C#</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>Java</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>PHP</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>HTML</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>CSS</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>JavaScript</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>Python</span>
+                     </label>
+                   </p> 
+                 </form>
+            
+                <br>
+                <br>  
+               <button class="btn waves-effect waves-light" type="submit" name="action">Siųsti
+                <i class="material-icons right"></i>
+               </button>
+        </fieldset>
+    
+    </form> 
+ 
+    
+  <script type="text/javascript" src="js/materialize.js"></script> 
+  
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+      
+    $(document).ready(function(){
+    $('select').formSelect();
+    });
+     
+    $(document).ready(function() {
+               M.updateTextFields();
+    });
+    
+  </script>
+   
+</body>
+</html>
