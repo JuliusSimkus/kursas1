@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS8</title>
+   <link rel="stylesheet" href="layout.css">
+   <style>
+   
+      .form{
+         padding-top: 30px;
+         background-color: lightgoldenrodyellow;
+         width: 800px;
+      }
+      .vardas, .pavarde{
+         margin-left: 130px;
+        
+      }
+      p, h2{
+         margin-left: 10px;
+      }
+      .antrash2{
+         padding-top: 15px;
+      }
+     input{
+         border-radius: 4px;
+      }
+      .antras{
+         background-color: palegreen;
+         
+      }
+      #table2{
+/*         border: 1px solid black;*/
+         border-collapse: collapse;
+         margin-left: 10px;
+         display: table;
+      }
+      table.table td {
+          border: 2px solid black;
+      }        
+           
+      table.table tr:first-child td {
+         background-color: mediumpurple;
+         text-align: center;
+         height: 30px;
+         border: 1px solid black;
+      }  
+
+      .firstcol{
+         width: 550px;
+         height: 30px;
+         font-weight: bold;
+      }
+
+      button{
+         width: 570px;
+         height: 25px;
+         margin-left: 10px;
+         margin-bottom: 15px;
+         box-shadow: 0 1px 3px rgba(0,0,0,0.5)
+      }
+
+      .antras{
+         width: 800px;
+      }
+      .namecol1{
+         width: 450px;
+         padding-left: 10px;
+         height: 25px;
+      }
+      .namecol2{
+         padding-left: 10px;
+         height: 25px;
+      }
+      .snamecol1, .snamecol2{
+         width: 80px;
+         text-align: center;
+      }
+      .emailcol1, .emailcol2{
+         width: 150px;
+         text-align: center;
+      }
+      
+   </style>
+</head>
+
+<body>
+   <h1>Jūsų informacija </h1> 
+   
+   <form method="post" action="imone.php" class="form">
+        <h2>Registracijos forma</h2>
+         <p>Jeigu norite užsiregistruoti į renginį, užpildykite žemiau esančią formą. Žemiau galite pamatyti jau užsiregistravusius dalyvius.</p>
+         <table> 
+          <tr>
+            <td><p>Vardas</p></td>
+            <td><input type="text" name="username" class="vardas col-12"/></td>
+         </tr>  
+          <tr>
+            <td><p>Pavardė</p></td>
+            <td><input type="text" name="surname" class="pavarde col-12" /></td>
+         </tr> 
+          <tr>
+            <td><p>Elektroninis paštas</p></td>
+             <td><input type="text" name="email" class="pavarde col-12" /></td>
+         </tr>             
+         </table>
+      <button>Registruoti</button>
+    </form> 
+    
+   <div class="antras">
+   
+   <h2 class="antrash2">Jau užsiregistravę dalyviai:</h2>
+   <table class="table" id="table2">
+    <tr>
+      <td colspan="3" class="firstcol" >Vardas Pavardė Elektroninis paštas</td>
+    </tr>
+    <tr>
+      <td class="namecol1">Jonas</td>   
+      <td class="snamecol1">Jonaitis</td>
+      <td class="emailcol1">jonaitis@gmail.com</td>
+    </tr>  
+    <tr>
+      <td class="namecol2">Petras</td>   
+      <td class="snamecol2">Petraitis</td>
+      <td class="emailcol2">petraitis@gmail.com</td>
+    </tr>   
+      
+   </table>
+      <br>
+      <br>
+   </div>
+   
+</body>
+</html>
