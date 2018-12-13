@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS3</title>
+</head>
+
+<body>
+   
+   
+   
+   
+   <script>
+   
+   var preke = {
+   title: "Nešiojamas kompiuteris",
+   description: "NVIDIA GeForce GTX 1070 grafinis adapteris su Max-Q4 technologija, Intel Core 8th Generation procesorius ir pažangi aušinimo sistema suteikia reikiamą galią, nesvarbu, kur būtumėte.",
+   discount: 30,
+   isItNew: true,
+   color: 0,
+   price: 699.00,
+   currency: "EUR"
+   };
+   
+      
+      
+   if (preke.isItNew == true){   
+         document.write("<h1 style='color:green'>" + preke.title + "</h1>");
+      } else{
+         document.write("<h1 style='color:black'>" + preke.title + "</h1>");
+      }   
+      
+   document.write(preke.description);
+   
+   document.write("<p>" + preke.discount + " %" + "</p>");
+   
+   document.write("<p>" + preke.price + preke.currency + " %" + "</p>");
+   
+   document.write("<p>" + "Spalva: juoda" + "</p>");   
+      
+   
+   </script>
+</body>
+</html>
