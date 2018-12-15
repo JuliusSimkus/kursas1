@@ -12,14 +12,20 @@
    
    <script>
    
-   var firstnumber= prompt("Įveskite pirmą skaičių", "");
-   var secondnumber= prompt("Įveskite antrą skaičių", "");   
+      var x= prompt("Įveskite pirmą skaičių", "");
+      var y= prompt("Įveskite antrą skaičių", "");   
       
-   var action = firstnumber/secondnumber;
-   alert(action);
-   document.write(action);   
-   console.log(action);
+   
       
+      function dalyba(x, y){
+         var veiksmas = x/y;
+         return veiksmas;
+      }
+      
+      
+      var veiksmas = dalyba(x, y);
+      console.log(veiksmas);
+      alert(veiksmas);
    </script>
 </body>
 </html>
