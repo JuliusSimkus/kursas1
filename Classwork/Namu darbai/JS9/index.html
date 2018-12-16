@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS9</title>
+   
+   <style>
+      
+      table, tr, td{
+         width: 850px;
+         text-align: left;
+         font-weight: normal;
+         background-color:aliceblue;
+      }
+      
+      tr:first-child td {
+         text-align: center;
+         font-weight: bold;
+      }
+
+   
+   
+   </style>
+</head>
+
+<body>
+   
+   
+   <script>
+   
+   
+      var viesbuciai = [
+      {
+      "name": "Radisson",
+      "Address": "Konstitucijos pr. 29",
+      "Rooms":[
+      {"Number":210, "GuestCount":2, "Price":100},
+      {"Number":211, "GuestCount":2, "Price":110},
+      {"Number":212, "GuestCount":2, "Price":109}
+      ]
+      },
+      {
+      "name": "Vilnius Inn",
+      "Address": "Šiaulių g. 3",
+      "Rooms":[
+      {"Number":11, "GuestCount":2, "Price":100},
+      {"Number":15, "GuestCount":1, "Price":58},
+      {"Number":22, "GuestCount":2, "Price":80},
+      {"Number":23, "GuestCount":2, "Price":99}
+      ]
+      }
+      ];
+   
+      function lentele(){
+         document.write ("<h1>" + "Viešbučiai su laisvais kambariais" + "</h1>");
+         document.write ("<h2>" + "Radisson" + "</h2>");
+         document.write ("<h3>" + "Konstitucijos pr. 29" + "</h3>");
+         document.write ("<table border=1>");
+         document.write ("<tr>");
+         document.write("<td>" + "Kambario numeris" + "</td><td>" + "Žmonių skaičius" + "</td><td>" + "Kaina" + "</td>");
+         document.write ("</tr>");                            
+         document.write ("<tr>");
+         document.write("<td>" + 210 + "</td><td>" + 2 + "</td><td>" + 100 + "</td>");
+         document.write ("</tr>");                         
+         document.write ("<tr>");
+         document.write("<td>" + 211 + "</td><td>" + 2 + "</td><td>" + 110 + "</td>");
+         document.write ("</tr>");          
+         document.write ("<tr>");
+         document.write("<td>" + 212 + "</td><td>" + 2 + "</td><td>" + 109 + "</td>");
+         document.write ("</tr>");              
+         document.write ("</table>") 
+         
+         document.write ("<h2>" + "Vilnius Inn" + "</h2>");
+         document.write ("<h3>" + "Šiaulių g. 3" + "</h3>");
+         document.write ("<table border=1>");
+         document.write ("<tr>");
+         document.write("<td>" + "Kambario numeris" + "</td><td>" + "Žmonių skaičius" + "</td><td>" + "Kaina" + "</td>");
+         document.write ("</tr>");                            
+         document.write ("<tr>");
+         document.write("<td>" + 11 + "</td><td>" + 2 + "</td><td>" + 100 + "</td>");
+         document.write ("</tr>");                         
+         document.write ("<tr>");
+         document.write("<td>" + 15 + "</td><td>" + 1 + "</td><td>" + 58 + "</td>");
+         document.write ("</tr>");          
+         document.write ("<tr>");
+         document.write("<td>" + 22 + "</td><td>" + 2 + "</td><td>" + 80 + "</td>");
+         document.write ("</tr>");   
+          document.write ("<tr>");
+         document.write("<td>" + 23 + "</td><td>" + 2 + "</td><td>" + 99 + "</td>");
+         document.write ("</tr>");           
+         document.write ("</table>") 
+         
+      }
+   
+      lentele();
+   
+   
+   
+   </script>
+   
+   
+</body>
+</html>
