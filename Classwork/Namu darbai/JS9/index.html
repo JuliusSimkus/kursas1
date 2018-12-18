@@ -18,7 +18,6 @@
          text-align: center;
          font-weight: bold;
       }
-
    
    
    </style>
@@ -31,7 +30,8 @@
    
    <script>
    
-   
+      document.write ("<h1>" + "Viešbučiai su laisvais kambariais" + "</h1>");
+       
       var viesbuciai = [
          
       {
@@ -55,9 +55,16 @@
       ]
       }
       ];  
-      
-         
-        lentele(viesbuciai); 
+       
+ 
+        for (i = 0;i < viesbuciai.length; i ++){
+        
+        lentele(viesbuciai);   
+        }
+       
+
+       
+       
    </script>
    
    
