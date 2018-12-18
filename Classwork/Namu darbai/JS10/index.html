@@ -10,20 +10,22 @@
    
    
    
-   
    <script>
         
       var visiVardai = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
-      var blogasVardas = "Jonas"; 
+      var blogasVardas = visiVardai.indexOf("y"); 
       
       
-      function atrinktiVardus (){
-            if (visiVardai.includes (blogasVardas)){
-               document.write("Petras ", "Martynas ", "Ona ", "Urtė ", " Ema");
-            } 
+      function atrinktiVardus (x, y){
+         for( var i = 0; i < visiVardai.length; i++){ 
+            if ( visiVardai[i] === y) {
+              visiVardai.splice(i, 1);
+               document.write(visiVardai);
+            }
+         }
       }
       
-      atrinktiVardus();
+      atrinktiVardus(visiVardai, "Jonas");
    
    </script>
 </body>
