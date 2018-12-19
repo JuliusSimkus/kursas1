@@ -15,13 +15,13 @@
    
       
       var vardai = ["Tomas", "Romas", "Rokas", "Joana", "Dovydas", "Edita"];    
-      function visiVardai (){
+      function visiVardai (vardai){
             var ranindex = Math.random()*vardai.length;
             var finalindex = Math.floor(ranindex);
             return (vardai[finalindex]); 
       }
 
-      var rezultatas = visiVardai();
+      var rezultatas = visiVardai(vardai);
       document.write(rezultatas);
       
       
