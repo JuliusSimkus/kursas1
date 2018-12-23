@@ -42,11 +42,24 @@
               margin-top: -5px;
 
            }
+           .carousel{
+              height: 100%;
+              margin-top: -90px;
+           }
             .carousel .carousel-item>img {
                 width: 230%;
-                height: 120%;
+                height: 110%;
                 margin-left: -50%; 
             }
+           div[class^="below"]{
+              box-shadow: 13px 10px 26px -9px rgba(0,0,0,0.75);
+              width: 400px;
+              height: 150px;
+              margin-left: -75px;
+              background-color: white;
+              text-align: center;
+              padding: 1px 1px 1px 1px;
+           }
            
            
            
@@ -57,22 +70,22 @@
 
     <body>
         
-     <nav class="blue lighten-1">
-        <div class="nav-wrapper">
-          <a href="Images/logo.png" class="brand-logo"><img src="Images/logo.png" class="logo"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html" class="black-text text-lighten-3"><b>Kelionės</b></a></li>
-            <li><a href="#items">Patarimai</a></li>
-            <li><a href="#about">Apie</a></li>
-          </ul>
-        </div>            
-    </nav>
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="index.html">Kelionės</a></li>
-      <li><a href="#items">Patarimai</a></li>
-      <li><a href="#about">Apie</a></li>
-   </ul>  
+              <nav class="blue lighten-1">
+                 <div class="nav-wrapper">
+                   <a href="Images/logo.png" class="brand-logo"><img src="Images/logo.png" class="logo"></a>
+                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                   <ul class="right hide-on-med-and-down">
+                     <li><a href="index.html" class="black-text text-lighten-3"><b>Kelionės</b></a></li>
+                     <li><a href="#advice">Patarimai</a></li>
+                     <li><a href="#about">Apie</a></li>
+                   </ul>
+                 </div>            
+             </nav>
+             <ul class="sidenav" id="mobile-demo">
+               <li><a href="index.html">Kelionės</a></li>
+               <li><a href="#advice">Patarimai</a></li>
+               <li><a href="#about">Apie</a></li>
+            </ul>  
 
     
     <main>
@@ -85,17 +98,23 @@
             
                
               <div class="carousel" class="box">
-                <a class="carousel-item" href="#items"><img src="Images/Fuerte.jpg"></a>
-                <a class="carousel-item" href="#items"><img src="Images/brazil.jpg"></a>
-                <a class="carousel-item" href="#items"><img src="Images/norway.jpg"></a>
-                <a class="carousel-item" href="#items"><img src="Images/rome.jpg"></a>
-              </div>              
+                <a class="carousel-item" ><img src="Images/Fuerte.jpg"><div class="belowCarousel" href><p>Fuerteventūra - Kanarų sala, esanti prie Afrikos žemyno krantų (šalia Maroko). Vidutinė temperatūra siekia + 18 sausį ir +25 rugsėjį. Fuerteventūra labiausiai mėgstama dėl savo pusantro šimto paplūdimių</p></div></a>
+                 
+                <a class="carousel-item"><img src="Images/brazil.jpg"><div class="belowCarousel"><p>Brazilijos Federacinė Respublika (portug. República Federativa do Brasil) – valstybė Pietų Amerikos žemyne, didžiausia ir daugiausiai gyventojų turinti šio žemyno valstybė.</p></div></a>
+                 
+                <a class="carousel-item"><img src="Images/norway.jpg"><div class="belowCarousel"><p>Norvegija yra nepaprastai graži šalis, išvagota ledynų, fiordų ir kalnų. Tai ilga siaura šalis, nutįsusi išilgai Skandinavijos pusiasalio iš šiaurės rytų į pietvakarius. Nuo Danijos ją skiria Skagerako sąsiauris.</p></div></a>
+                 
+                <a class="carousel-item"><img src="Images/rome.jpg"><div class="belowCarousel"><p>Roma – Italijos sostinė (nuo 1870 m.) ir didžiausias miestas, esantis šalies centrinėje dalyje prie Tibro upės. Didelis turizmo centras, turintis daugybę antikinių ir viduramžių paminklų, turtingus muziejus.</p></div></a>
+                 
+              </div>
+               
+               
                  
                  
 
             </div>
         
-          <div class="section white bigview" id="items">
+          <div class="section white bigview" id="advice">
             <div class="row container">
                   <h2 class="header">Patarimai</h2>
 
@@ -150,51 +169,51 @@
          </div>
       </div>
         
-    <div class="parallax-container">
-      <div class="parallax"><img src="Images/back.jpg"></div>
-    </div>
+       <div class="parallax-container">
+         <div class="parallax"><img src="Images/back.jpg"></div>
+       </div>
     
         
-    <div class="section white bigview" id="about">
-      <div class="row container">
-        <h2 class="header">Apie</h2>
-          <p class="grey-text text-darken-3 lighten-3">Kelionių blog'as yra kelionių blog'as.</p>
-        <h3>Pasidalink savo istorija</h3>
-          
-          <div class="row">
-            <form class="col s12">
-                
-              <div class="row">
-                <div class="input-field col s12 m6 l4">
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name">Vardas</label>
-                </div>
-                <div class="input-field col s12 m6 l4">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Pavardė</label>
-                </div>
+       <div class="section white bigview" id="about">
+         <div class="row container">
+           <h2 class="header">Apie</h2>
+             <p class="grey-text text-darken-3 lighten-3">Kelionių blog'as yra kelionių blog'as.</p>
+           <h3>Pasidalink savo istorija</h3>
 
-                <div class="input-field col s12 m6 l4">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">El. paštas</label>
-                </div>
-              </div>
+             <div class="row">
+               <form class="col s12">
 
-              <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
-                  <label for="textarea1">Jūsų tekstas</label>
-                </div>
-              </div>
+                 <div class="row">
+                   <div class="input-field col s12 m6 l4">
+                     <input id="first_name" type="text" class="validate">
+                     <label for="first_name">Vardas</label>
+                   </div>
+                   <div class="input-field col s12 m6 l4">
+                     <input id="last_name" type="text" class="validate">
+                     <label for="last_name">Pavardė</label>
+                   </div>
 
-                  <button class="btn waves-effect waves-light pulse" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                </button>
+                   <div class="input-field col s12 m6 l4">
+                     <input id="email" type="email" class="validate">
+                     <label for="email">El. paštas</label>
+                   </div>
+                 </div>
 
-            </form>
-        </div>
-      </div>
-    </div>        
+                 <div class="row">
+                   <div class="input-field col s12">
+                     <textarea id="textarea1" class="materialize-textarea"></textarea>
+                     <label for="textarea1">Jūsų tekstas</label>
+                   </div>
+                 </div>
+
+                     <button class="btn waves-effect waves-light pulse" type="submit" name="action">Submit
+                       <i class="material-icons right">send</i>
+                   </button>
+
+               </form>
+           </div>
+         </div>
+       </div>        
      
         
        
@@ -245,8 +264,8 @@
           $('.parallax').parallax();
           });    
             
-         $('a[href="#items"]').click(function(event){
-         $('html, body').animate({scrollTop: $("#items").offset().top}, 'slow');
+         $('a[href="#advice"]').click(function(event){
+         $('html, body').animate({scrollTop: $("#advice").offset().top}, 'slow');
          });
 
 
