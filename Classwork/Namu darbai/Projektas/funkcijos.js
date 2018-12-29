@@ -6,3 +6,5 @@ function skaiciuoti(){
    var atsakymas = x*y*z;
    $(".badge").append('<b>' + "Jums reikės " + atsakymas + " Eur" + '</b>');
 }
+
+
