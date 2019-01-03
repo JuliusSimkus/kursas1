@@ -13,8 +13,9 @@
 
 <body>
 
-   <p><?= $city . ' - Lietuvos sostinė.'?></p>
-   <p><?= "$city ir $country sparčiai auga"?></p>
+   <p><?= $city . ' - Lietuvos sostinė.' ; ?></p>
+   <p><?= "$city ir $country sparčiai auga." ; ?></p>
+   
    
 </body>
 </html>
