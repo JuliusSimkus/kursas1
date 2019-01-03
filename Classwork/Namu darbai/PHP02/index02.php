@@ -1,6 +1,6 @@
-<?php $country = 'Lietuva'; ?>
-<?php $city = 'Vilnius'; ?>
-<?php $population = 574221; ?>
+<?php $country = 'Lietuva'; 
+      $city = 'Vilnius'; 
+      $population = 574221; ?>
 <!DOCTYPE html>
 <html lang="">
 <head>
