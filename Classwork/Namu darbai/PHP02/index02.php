@@ -1,6 +1,8 @@
 <?php $country = 'Lietuva'; 
       $city = 'Vilnius'; 
-      $population = 574221; ?>
+      $population = 574221; 
+      $largest_population = true;
+?>
 <!DOCTYPE html>
 <html lang="">
 <head>
