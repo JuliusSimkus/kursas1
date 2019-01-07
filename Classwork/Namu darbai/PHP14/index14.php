@@ -13,9 +13,9 @@
   
 
 
-   $date_str = '2010';
 
-   $formatted_date = date('2015', strtotime($date_str)) ;  
+
+   $formatted_date = date('2010') ;  
 
       if ($formatted_date >= 2019){
            echo '&copy ' . date("Y"); 
