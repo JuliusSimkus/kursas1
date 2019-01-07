@@ -15,7 +15,7 @@
 
 
 
-   $formatted_date = date('2010') ;  
+   $formatted_date = date('2017') ;  /*tinklalapio sukūrimo metai*/
 
       if ($formatted_date >= 2019){
            echo '&copy ' . date("Y"); 
