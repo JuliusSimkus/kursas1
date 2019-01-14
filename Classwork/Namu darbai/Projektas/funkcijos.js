@@ -1,5 +1,5 @@
-function skaiciuoti(){
-   $( ".badge" ).empty();
+function skaiciuoti() {
+   $(".badge").empty();
    var x = $("#counter1").val();
    var y = $("#counter2").val();
    var z = $("#counter3").val();

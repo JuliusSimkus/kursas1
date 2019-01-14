@@ -1,3 +1,9 @@
+<?php 
+
+   require __DIR__ . '/forma/src/app.php';  
+
+?> 
+
 
 <!DOCTYPE html>
   <html>
@@ -46,20 +52,13 @@
          
            #card{
                width: 430px;
-               padding-bottom: 45px;
+               padding-bottom: 15px;
                padding-top: 5px;
                float: right;
                box-shadow: 13px 10px 26px -9px rgba(0,0,0,0.75);
                border-radius: 10px;
            }
            
-           #slideris{
-              margin-top: 70px;
-
-           }
-           
-
-            
 
         </style>
        <meta charset="utf-8">
@@ -67,7 +66,7 @@
     </head>
 
     <body>
-        
+
               <nav class="blue lighten-1">
                  <div class="nav-wrapper">
                    <a class="brand-logo"><img src="Images/logo.png" class="logo"></a>
@@ -91,7 +90,7 @@
             <div class="parallax-container bigview">
                 <div class="parallax"><img id="imageback" src="Images/back.jpg"></div>
                
-                  <div class="slider" id="slideris">
+                <div class="slider" id="slideris">
                       <ul class="slides">
                         <li>
                           <img src="Images/brazil.jpg"> 
@@ -122,18 +121,13 @@
                           </div>
                         </li>
                       </ul>
-                    </div>               
+                 </div>               
                
- 
-
-                 
-                 
-
             </div>
         
           <div class="section white bigview" id="advice">
             <div class="row container">
-                  <h2 class="header">Patarimai</h2>
+              <h2 class="header">Patarimai</h2>
 
           
                <div id="skaiciuokle" class="col s12 m6 l4">
@@ -150,56 +144,46 @@
                          <label>Šalis</label>
                        </div>
 
-                    <div class="input-field col s12">
-                      <select id="counter2">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="3">3 dienos</option>
-                        <option value="7">1 savaitė</option>
-                        <option value="14">2 savaitės</option>
-                      </select>
-                      <label>Laikotarpis</label>
-                   </div>
+                        <div class="input-field col s12">
+                          <select id="counter2">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="3">3 dienos</option>
+                            <option value="7">1 savaitė</option>
+                            <option value="14">2 savaitės</option>
+                          </select>
+                          <label>Laikotarpis</label>
+                       </div>
 
-                    <div class="input-field col s12">
-                      <select id="counter3">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">1 žmogus</option>
-                        <option value="2">2 žmonės</option>
-                        <option value="3">3 žmonės</option>
-                      </select>
-                      <label>Žmonių kiekis</label>
-                    </div>
-
+                        <div class="input-field col s12">
+                          <select id="counter3">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 žmogus</option>
+                            <option value="2">2 žmonės</option>
+                            <option value="3">3 žmonės</option>
+                          </select>
+                          <label>Žmonių kiekis</label>
+                        </div>
 
                     <span class="badge"></span>
 
-
                   <a id="skaiciuoti" class="waves-effect waves-light btn">Skaičiuoti</a>
-             
             </div>
-               
-               
-               
+                
                
               <div class="col s12 m6 l4 card" id="card">
                    <div class="card-content">
-                     <p>Čia galite rasti lankytojų istorijas ir patarimus</p>
+                     <h6>Čia galite rasti lankytojų istorijas ir patarimus</h6>
                    </div>
-                   <div class="cards-tabs">
-                     <ul class="tabs tabs-fixed-width">
-                       <li class="tab"><a href="#test4" >Rokas</a></li>
-                       <li class="tab"><a href="#test5" >Tomas</a></li>
-                       <li class="tab"><a href="#test6" >Agnė</a></li>                     
-                     </ul>
-                   </div>
-                   <div class="card-content grey lighten-4">
-                     <div id="test4">Roberto tekstas      </div>
-                     <div id="test5">Roberto tekstas</div>
-                     <div id="test6">Agnės tekstas</div>                  
-                   </div>
+                    <div class="cards-tabs" id="cardNames">           
+                        <?php               
+                            include ('card1.php');
+                        ?>               
+                    </div>
+                        <?php               
+                            include ('card2.php');
+                        ?>  
                </div>                
                             
-        
          </div> 
       </div>
         
@@ -215,15 +199,15 @@
            <h3>Pasidalink savo istorija</h3>
 
              <div class="row">
-               <form class="col s12" action="<?php $_PHP_SELF; ?>" method="POST">
+               <form class="col s12" id="contact" action="" method="POST">
 
                  <div class="row">
                    <div class="input-field col s12 m6 l4">
-                     <input id="first_name" type="text" class="validate" name="vardas">
+                     <input id="first_name" type="text" class="validate" name="vardas" required>
                      <label for="first_name">Vardas</label>
                    </div>
                    <div class="input-field col s12 m6 l4">
-                     <input id="last_name" type="text" class="validate" name="pavarde">
+                     <input id="last_name" type="text" class="validate" name="pavarde" required>
                      <label for="last_name">Pavardė</label>
                    </div>
 
@@ -235,23 +219,24 @@
 
                  <div class="row">
                    <div class="input-field col s12">
-                     <textarea id="textarea1" class="materialize-textarea" name="tekstas"></textarea>
+                     <textarea id="textarea1" class="materialize-textarea" name="tekstas" required></textarea>
                      <label for="textarea1">Jūsų tekstas</label>
                    </div>
                  </div>
 
                      <button class="btn waves-effect waves-light pulse" type="submit" name="action" id="submit">Submit
-                       <i class="material-icons right">send</i>
-                   </button>
-
+                       <i class="material-icons right"></i>
+                     </button>
+                   
+                   
                </form>
+
            </div>
          </div>
        </div>        
      
        <div id="modal"></div>
-        
-       
+         
     </main>    
         
           
@@ -275,7 +260,14 @@
                 </div>
                 <div class="footer-copyright">
                   <div class="container">
-                  © 2019 Kelionių blogas
+                   <?php
+                       $formatted_date = date('2019') ;  /*tinklalapio sukūrimo metai*/
+                          if ($formatted_date >= date('Y')){
+                               echo '&copy ' . $formatted_date; 
+                          } else{
+                               echo '&copy ' . $formatted_date . "-" . date("Y");
+                          }
+                    ?> Kelionių blogas
 
                   </div>
                 </div>
@@ -290,7 +282,7 @@
      <script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
        
         <script>
-           
+
           $(document).ready(function(){
             $('.sidenav').sidenav();
           });
