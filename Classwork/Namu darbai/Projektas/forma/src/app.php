@@ -6,7 +6,7 @@ if(isset($_POST['action'])){
    $email = trim($_POST['email']);
    $message = trim($_POST['tekstas']);    
     header('Location: http://localhost/php/projektas/index.php'); 
-}
+
 
 
 if(!empty($vardas) && !empty($email) && !empty($tekstas)){
@@ -22,6 +22,4 @@ if(!empty($vardas) && !empty($email) && !empty($tekstas)){
 }
 include('db.php');
 
-             
-
-            
+}           

@@ -30,9 +30,8 @@
             }    
             
             .logo{
-                width: 55px;
-               padding-top: 8px;
-               padding-left: 7px;
+                width: 60px;
+                padding-left: 7px;
             }
            .box{
               height: 250px;
@@ -69,7 +68,7 @@
 
               <nav class="blue lighten-1">
                  <div class="nav-wrapper">
-                   <a class="brand-logo"><img src="Images/logo.png" class="logo"></a>
+                   <a class="brand-logo"><img src="Images/logo.png" class="logo">Kelionių blogas</a>
                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                    <ul class="right hide-on-med-and-down">
                      <li><a href="index.html" class="black-text text-lighten-3"><b>Kelionės</b></a></li>
@@ -224,7 +223,7 @@
                    </div>
                  </div>
 
-                     <button class="btn waves-effect waves-light pulse" type="submit" name="action" id="submit">Submit
+                     <button class="btn waves-effect waves-light pulse" type="submit" name="action" id="submit">Siųsti
                        <i class="material-icons right"></i>
                      </button>
                    

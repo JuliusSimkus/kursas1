@@ -21,5 +21,3 @@ if(isset($_POST['action'])){
     $mysqli->close();  
     
 }
-
-
