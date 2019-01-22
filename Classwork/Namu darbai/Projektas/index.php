@@ -11,7 +11,7 @@
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="Materialize/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="https://astajo.eu/projektas/materialize/css/materialize.min.css"  media="screen,projection"/>
        <title>Kelionių blogas</title>
         <style>
         
@@ -38,8 +38,8 @@
            }
            #skaiciuokle{
 /*              border: 1px solid black;*/
-              height: 430px;
-              width: 400px;
+              height: 440px;
+/*              width: 400px;*/
               box-shadow: 13px 10px 26px -9px rgba(0,0,0,0.75);
               
            }
@@ -50,12 +50,12 @@
            }
          
            #card{
-               width: 430px;
                padding-bottom: 15px;
                padding-top: 5px;
                float: right;
                box-shadow: 13px 10px 26px -9px rgba(0,0,0,0.75);
                border-radius: 10px;
+               margin-right: 5px;
            }
            
 
@@ -68,7 +68,7 @@
 
               <nav class="blue lighten-1">
                  <div class="nav-wrapper">
-                   <a class="brand-logo"><img src="Images/logo.png" class="logo">Kelionių blogas</a>
+                   <a class="brand-logo"><img src="https://astajo.eu/projektas/images/logo.png" class="logo">Kelionės</a>
                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                    <ul class="right hide-on-med-and-down">
                      <li><a href="index.html" class="black-text text-lighten-3"><b>Kelionės</b></a></li>
@@ -87,33 +87,33 @@
     <main>
         
             <div class="parallax-container bigview">
-                <div class="parallax"><img id="imageback" src="Images/back.jpg"></div>
+                <div class="parallax"><img id="imageback" src="https://astajo.eu/projektas/images/back.jpg"></div>
                
                 <div class="slider" id="slideris">
                       <ul class="slides">
                         <li>
-                          <img src="Images/brazil.jpg"> 
+                          <img src="https://astajo.eu/projektas/images/brazil.jpg"> 
                           <div class="caption center-align">
                             <h3>Brazilija</h3>
                             <h5 class="light grey-text text-lighten-3">Pietų Amerika</h5>
                           </div>
                         </li>
                         <li>
-                          <img src="Images/Fuerte.jpg"> 
+                          <img src="https://astajo.eu/projektas/images/Fuerte.jpg"> 
                           <div class="caption left-align">
                             <h3>Fuerteventura (Kanarų salos)</h3>
                             <h5 class="light grey-text text-lighten-3">Ispanijos salynas vakarų Afrikoje</h5>
                           </div>
                         </li>
                         <li>
-                          <img src="Images/norway.jpg"> 
+                          <img src="https://astajo.eu/projektas/images/norway.jpg"> 
                           <div class="caption right-align">
                             <h3>Norvegija</h3>
                             <h5 class="light grey-text text-lighten-3">Europa</h5>
                           </div>
                         </li>
                         <li>
-                          <img src="Images/rome.jpg">
+                          <img src="https://astajo.eu/projektas/images/rome.jpg">
                           <div class="caption center-align">
                             <h3>Roma</h3>
                             <h5 class="light grey-text text-lighten-3">Italija</h5>
@@ -129,7 +129,7 @@
               <h2 class="header">Patarimai</h2>
 
           
-               <div id="skaiciuokle" class="col s12 m6 l4">
+               <div id="skaiciuokle" class="col s12 m6 l5">
                   <h4>Skaičiuoklė</h4>
                   <p>Čia galite suskaičiuoti pagal šalį, laikotarpį ir žmonių kiekį, kiek jums rekomenduoju pasiimti dienpinigių.</p>
                        <div class="input-field col s12">
@@ -165,11 +165,11 @@
 
                     <span class="badge"></span>
 
-                  <a id="skaiciuoti" class="waves-effect waves-light btn">Skaičiuoti</a>
+                  <a id="skaiciuoti" class="waves-effect waves-light btn-small col s4 m5 l4">Skaičiuoti</a>
             </div>
                 
                
-              <div class="col s12 m6 l4 card" id="card">
+              <div class="col s12 m5 l5 card" id="card">
                    <div class="card-content">
                      <h6>Čia galite rasti lankytojų istorijas ir patarimus</h6>
                    </div>
@@ -187,7 +187,7 @@
       </div>
         
        <div class="parallax-container">
-         <div class="parallax"><img src="Images/back.jpg"></div>
+         <div class="parallax"><img src="https://astajo.eu/projektas/images/back.jpg"></div>
        </div>
     
         
@@ -276,9 +276,9 @@
         
         
         
-     <script type="text/javascript" src="Materialize/js/jquery-3.3.1.js"></script> 
-     <script src="funkcijos.js"></script>
-     <script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
+     <script type="text/javascript" src="https://astajo.eu/projektas/materialize/js/jquery-3.3.1.js"></script> 
+     <script src="https://astajo.eu/projektas/funkcijos.js"></script>
+     <script type="text/javascript" src="https://astajo.eu/projektas/materialize/js/materialize.min.js"></script>
        
         <script>
 

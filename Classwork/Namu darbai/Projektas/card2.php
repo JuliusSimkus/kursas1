@@ -1,7 +1,7 @@
 
-      <link type="text/css" rel="stylesheet" href="Materialize/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="https://astajo.eu/projektas/materialize/css/materialize.min.css"  media="screen,projection"/>
 <?php
-$link = mysqli_connect("localhost", "root", "", "lankytojai");
+$link = mysqli_connect("localhost", "asjoeu_julius", "Juliusphp1", "asjoeu_lankytojai");
  
 
 if($link === false){

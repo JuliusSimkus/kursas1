@@ -5,7 +5,7 @@ if(isset($_POST['action'])){
    $vardas = trim($_POST['vardas']);
    $email = trim($_POST['email']);
    $message = trim($_POST['tekstas']);    
-    header('Location: http://localhost/php/projektas/index.php'); 
+    header('Location: https://astajo.eu/projektas/index.php'); 
 
 
 
