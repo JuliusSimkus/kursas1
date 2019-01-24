@@ -298,6 +298,10 @@
          $('a[href="#about"]').click(function(event){
             $('html, body').animate({scrollTop: $("#about").offset().top}, 'slow');
          });
+            
+         $('a[href="#slideris"]').click(function(event){
+            $('html, body').animate({scrollTop: $("#slideris").offset().top}, 'slow');
+         });
 
          $(document).ready(function(){
              $('.carousel').carousel();
