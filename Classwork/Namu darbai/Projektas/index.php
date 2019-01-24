@@ -71,14 +71,14 @@
                    <a class="brand-logo"><img src="https://astajo.eu/projektas/images/logo.png" class="logo">Kelionės</a>
                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                    <ul class="right hide-on-med-and-down">
-                     <li><a href="index.html" class="black-text text-lighten-3"><b>Kelionės</b></a></li>
+                     <li><a href="#slideris" class="black-text text-lighten-3"><b>Kelionės</b></a></li>
                      <li><a href="#advice">Patarimai</a></li>
                      <li><a href="#about">Apie</a></li>
                    </ul>
                  </div>            
              </nav>
              <ul class="sidenav" id="mobile-demo">
-               <li><a href="index.html">Kelionės</a></li>
+               <li><a href="#slideris">Kelionės</a></li>
                <li><a href="#advice">Patarimai</a></li>
                <li><a href="#about">Apie</a></li>
             </ul>  
