@@ -1,0 +1,35 @@
+<!--div word turinys-->                    
+
+<?php
+                                            $i=0;
+                                            while($row = mysqli_fetch_array($result)) {
+                                            ?>
+                                            <p class="words"><?php echo $row["word"]; ?></p>
+                                            <form method="POST"><button id="next" name="next">Next word</button></form>
+                                            <?php
+                                            $i++;
+                                            }
+                                        ?>
+
+
+
+
+
+
+
+
+
+            <?php
+                                                if($row = mysqli_fetch_array($result)){
+                                                    $randomWord = array_rand(array_flip($row), 1);
+                                                    echo '<p class="words">' . $randomWord . '</p>';
+                                                } 
+                 
+
+            ?>
+
+
+                                                if(isset($_POST["next"]) && $row = mysqli_fetch_array($result)){
+                                                    $randomWord = array_rand(array_flip($row), 1);
+                                                    echo '<p class="words">' . $randomWord . '</p>';
+                                                    }
